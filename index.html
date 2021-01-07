@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WRMP | Web Developer</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo">wrmp <span>| web development</span></a>
+            <img src="img/menu-icon.svg" onclick="toggle()" alt="Menu" id="toggle" class="toggle1">
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hi! I'm <br><span>William Manchabajoy</span></h2>
+            <p>Full Stack Web Developer</p>
+            <p>I want to share with you my portfolio and projects</p>
+            <a href="services.html"><span>More Info</span></a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+      function toggle() {
+          let sec = document.getElementById('sec');
+          let nav = document.getElementById('navigation');
+          sec.classList.toggle('active');
+          nav.classList.toggle('active');
+      }
+    </script>
+</body>
+</html>

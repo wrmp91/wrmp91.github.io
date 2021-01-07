@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-about.css">
+    <title>WRMP | About Me</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="index.html" class="logo">wrmp <span>| about me</span></a>
+            <img src="img/menu-icon.svg" onclick="toggle()" alt="Menu" id="toggle" class="toggle1">
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/linkedin.png"></a></li>
+        </ul>
+        <article class="article-about">
+            <h2>Looking for new challenges</h2>
+            <p>My name is William Manchabajoy, I'm 30 years old, I was born in Cali, Colombia.
+               I like to read and to do some sport. I'm getting started on web development, although,
+               I've spent some years in university studying engineering, but it really helped me 
+               to realize the amazing opportunity technology and software development is about. 
+            </p>
+            <p>
+               I like the most to discover new things and solving out problems, therefore, by doing
+               coding and interacting on different technologies I've a got a better understanding about
+               on how things evolved each day and what is the role we play and what is society demanding on
+               current time. 
+            </p>
+        </article>
+        <div class="about-pic">
+            <img src="img/about-me.jpg">
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            let sec = document.getElementById('sec');
+            let nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
